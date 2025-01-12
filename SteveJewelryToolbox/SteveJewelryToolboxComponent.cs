@@ -59,7 +59,7 @@ namespace SteveJewelryToolbox
         {
             // import a stone called unitStone.stl;
             var options = new Rhino.FileIO.FileStlReadOptions();
-            Rhino.FileIO.File3dm unitStoneDoc = Rhino.FileIO.File3dm.Read("/Assets/unitStone.stl");
+            Rhino.FileIO.File3dm unitStoneDoc = Rhino.FileIO.File3dm.Read("Assets/unitRoundStone.stl");
             var objectOnDefaultLayer = unitStoneDoc.Objects.FindByLayer("Default")[0];
             // declare a brep representing the unit stone.
             Brep unitStone = objectOnDefaultLayer.Geometry as Brep;
