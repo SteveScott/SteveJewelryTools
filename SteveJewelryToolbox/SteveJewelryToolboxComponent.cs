@@ -152,10 +152,10 @@ namespace SteveJewelryToolbox
                     LoftType.Straight, 
                     false)[0];
                 // add the cutter to the list.
+                cutter = cutter.CapPlanarHoles(0.01);
                 cutters.Add(cutter, new GH_Path(0, circles.IndexOf(circle)));
 
-                // create a brep representing the stone.
-                //
+                // create a brep representing the stone
                 Mesh stone = unitStone.DuplicateMesh();
 
                 // orient the stone to the circle's normal plane
